@@ -1,0 +1,18 @@
+2023-02-28T14:20:28+00:00 CRITICAL Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /home/anaelle/Local Sites/install-vierge/app/public/wp-includes/class-wp-hook.php(308): init_wysija_cron('')
+#7 /home/anaelle/Local Sites/install-vierge/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 /home/anaelle/Local Sites/install-vierge/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /home/anaelle/Local Sites/install-vierge/app/public/wp-settings.php(617): do_action('init')
+#10 /home/anaelle/Local Sites/install-vierge/app/public/wp-config.php(93): require_once('/home/anaelle/L...')
+#11 /home/anaelle/Local Sites/install-vierge/app/public/wp-load.php(50): require_once('/home/anaelle/L...')
+#12 /home/anaelle/Local Sites/install-vierge/app/public/wp-cron.php(46): require_once('/home/anaelle/L...')
+#13 {main}
+  thrown dans /home/anaelle/Local Sites/install-vierge/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php à la ligne 161
+
